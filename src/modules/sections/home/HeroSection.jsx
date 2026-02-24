@@ -22,7 +22,7 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-10  h-full grid  items-center  delay-300
                 animate-[slide_2s_ease-out_forwards]">
-        <div className="max-w-7xl mx-10 px-6  text-white ">
+        <div className="max-w-7xl mx-6 px-6 md:mx-16  text-white ">
 
           {/* Small Top Text */}
           <p className="text-yellow-400 font-semibold tracking-widest mb-4">

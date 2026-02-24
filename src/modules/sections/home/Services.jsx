@@ -1,29 +1,28 @@
 import React from 'react';
 import { Headset, Monitor, Calculator } from 'lucide-react';
-import { IconName } from 'lucide-react';
 
 
 const Services = () => {
-  const services = [
-    {
-      title: "Inbound Customer Service",
-      description: "Handling incoming calls from customers who need assistance with a product or service.",
-      icon: null, // Top-left card doesn't have an internal icon in the reference
-      bgColor: "bg-[#1a1a1a]",
-    },
-    {
-      title: "Outbound Sales Calls",
-      description: "Light communications: Quick technical solutions for smooth operations and enhanced customer satisfaction.",
-      icon: null,
-      bgColor: "bg-[#1a1a1a]",
-    },
-    {
-      title: "Technical Support",
-      description: "Streamlined Medical Billing Services for efficient claims processing, compliance management, and optimized revenue cycles.",
-      icon: null,
-      bgColor: "bg-[#1a1a1a]",
-    }
-  ];
+  // const services = [
+  //   {
+  //     title: "Inbound Customer Service",
+  //     description: "Handling incoming calls from customers who need assistance with a product or service.",
+  //     icon: null, // Top-left card doesn't have an internal icon in the reference
+  //     bgColor: "bg-[#1a1a1a]",
+  //   },
+  //   {
+  //     title: "Outbound Sales Calls",
+  //     description: "Light communications: Quick technical solutions for smooth operations and enhanced customer satisfaction.",
+  //     icon: null,
+  //     bgColor: "bg-[#1a1a1a]",
+  //   },
+  //   {
+  //     title: "Technical Support",
+  //     description: "Streamlined Medical Billing Services for efficient claims processing, compliance management, and optimized revenue cycles.",
+  //     icon: null,
+  //     bgColor: "bg-[#1a1a1a]",
+  //   }
+  // ];
 
   return (
     <section className="bg-[#121212] py-20 px-4 min-h-screen flex flex-col items-center justify-center font-sans text-white">

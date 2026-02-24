@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 
@@ -22,10 +21,10 @@ function Footer() {
 
         {/* Footer Links */}
         <div className="flex gap-6 text-gray-300">
-          <a href="#" className="hover:text-yellow-400">Home</a>
-          <a href="#" className="hover:text-yellow-400">Outbound</a>
-          <a href="#" className="hover:text-yellow-400">About Us</a>
-          <a href="#" className="hover:text-yellow-400">Contact Us</a>
+          <a href="/home" className="hover:text-yellow-400">Home</a>
+          <a href="/outbound" className="hover:text-yellow-400">Outbound</a>
+          <a href="/about" className="hover:text-yellow-400">About Us</a>
+          <a href="/contact" className="hover:text-yellow-400">Contact Us</a>
         </div>
 
         {/* Social Icons */}
