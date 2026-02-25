@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import OfficeVideo from '../../../assets/videos/office.mp4'
 function HeroSection() {
   return (
-     <section className="relative h-screen w-full">
+     <section className="relative h-screen w-full border-b-2">
 
       {/* Background Image */}
       <video
@@ -25,14 +25,14 @@ function HeroSection() {
         <div className="max-w-7xl mx-6 px-6 md:mx-16  text-white ">
 
           {/* Small Top Text */}
-          <p className="text-yellow-400 font-semibold tracking-widest mb-4">
+          <p className="text-gold-500 font-semibold tracking-widest mb-4">
             LET THERE BE LIGHT
           </p>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
             EFFECTIVELY{" "}
-            <span className="text-yellow-400">OUTSOURCE</span>
+            <span className="text-gold-500">OUTSOURCE</span>
             <br />
             YOUR BUSINESS ...
           </h1>
@@ -45,11 +45,11 @@ function HeroSection() {
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-full transition duration-300">
+            <button className="bg-gold-500 hover:bg-gold-800 text-gold-100 font-semibold px-8 py-3 rounded-full transition duration-300">
               Apply Now
             </button>
 
-            <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-semibold px-8 py-3 rounded-full transition duration-300">
+            <button className="border-2 border-gold-600 text-gold-100 hover:bg-yellow-400 hover:text-black font-semibold px-8 py-3 rounded-full transition duration-300">
               Services
             </button>
           </div>

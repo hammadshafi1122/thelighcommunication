@@ -25,11 +25,11 @@ const Services = () => {
   // ];
 
   return (
-    <section className="bg-[#121212] py-20 px-4 min-h-screen flex flex-col items-center justify-center font-sans text-white">
+    <section className="bg-[#1a1a1a] py-20 px-4 min-h-screen flex flex-col items-center justify-center font-sans text-white">
       {/* Section Header */}
       <div className="relative mb-16 flex flex-col items-center">
-        <div className="w-16 h-16 bg-[#fbbf24] rounded-full mb-[-20px] z-0"></div>
-        <h2 className="text-4xl font-black tracking-tighter uppercase relative z-10 italic">
+        <div className="w-16 h-16 bg-gold-600 rounded-full mb-[-20px] z-0"></div>
+        <h2 className="text-4xl font-black text-gold-200 tracking-tighter uppercase relative z-10 italic">
           Our Services
         </h2>
       </div>
@@ -39,19 +39,19 @@ const Services = () => {
         
         {/* Floating Icons based on the image layout */}
         <div className="absolute -top-12 left-[30%] z-20 hidden md:block">
-          <div className="bg-[#fbbf24] p-5 rounded-full shadow-xl">
+          <div className="bg-gold-600 p-5 rounded-full shadow-xl">
             <Monitor size={48} strokeWidth={1.5} className="text-black" />
           </div>
         </div>
 
         <div className="absolute -bottom-10 left-[38%] z-20 hidden md:block">
-          <div className="bg-[#fbbf24] p-5 rounded-full shadow-xl">
+          <div className="bg-gold-600 p-5 rounded-full shadow-xl">
             <Calculator size={48} strokeWidth={1.5} className="text-black" />
           </div>
         </div>
 
         <div className="absolute -bottom-10 right-4 z-20 hidden md:block">
-          <div className="bg-[#fbbf24] p-5 rounded-full shadow-xl">
+          <div className="bg-gold-600 p-5 rounded-full shadow-xl">
             <Headset size={48} strokeWidth={1.5} className="text-black" />
           </div>
         </div>

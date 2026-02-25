@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+:root {
+  --color-bg:           #212121;
+  --color-surface:      #2a2a2a;
+  --color-surface-2:    #333333;
+  --color-gold:         #c8953a;
+  --color-gold-light:   #d4a856;
+  --color-gold-muted:   #9e6e22;
+  --color-gold-subtle:  rgba(200, 149, 58, 0.12);
+  --color-text:         #f5f0e8;
+  --color-text-muted:   #a09070;
+  --color-text-faint:   #665540;
+  --color-border:       rgba(200, 149, 58, 0.2);
+  --color-border-muted: rgba(255, 255, 255, 0.06);
+}

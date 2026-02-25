@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <>
       {/* --- DESKTOP MENU --- */}
-      <nav className='hidden md:flex gap-28 font-semibold mx-20'>
+      <nav className=' hidden md:flex gap-28 font-semibold mx-20' >
         <NavLink to="/">Home</NavLink>
         <NavLink to="/outbound">Outbound</NavLink>
         <NavLink to="/inbound">Inbound</NavLink>
@@ -55,8 +55,8 @@ function Navbar() {
     />
 
           {/* Links */}
-          <nav className="flex flex-col gap-2 p-3 mx-10">
-            <NavLink style={linkStyle} to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
+          <nav className="flex flex-col gap-2 p-3 mx-10 btn-primary">
+            <NavLink style={linkStyle} to="/" onClick={() => setIsOpen(false)} >Home</NavLink>
             <NavLink style={linkStyle} to="/outbound" onClick={() => setIsOpen(false)}>Outbound</NavLink>
             <NavLink style={linkStyle} to="/inbound" onClick={() => setIsOpen(false)}>Inbound</NavLink>
             <NavLink style={linkStyle} to="/about" onClick={() => setIsOpen(false)}>About Us</NavLink>
