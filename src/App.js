@@ -9,7 +9,7 @@ function App() {
     <div className="" >
  
     <BrowserRouter>
-<div className="mx-auto   h-screen bg-red-200">
+<div className="mx-auto   h-screen ">
   
       <Routes className="bg-green-900  flex justify-center items-start">
         <Route path="/" element={<Home />} />
