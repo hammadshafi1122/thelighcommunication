@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -15,7 +12,7 @@ module.exports = {
           600: "#444444",
         },
         gold: {
-          50:  "#fdf8f0",
+          50: "#fdf8f0",
           100: "#f7edda",
           200: "#edd9b0",
           300: "#e0c080",
@@ -51,15 +48,15 @@ module.exports = {
 
       keyframes: {
         slide: {
-          '0%': { transform: 'translateX(-800px)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
+          "0%": { transform: "translateX(-800px)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
         },
       },
 
       animation: {
-        slide: 'slide 1s ease-out forwards',
+        slide: "slide 1s ease-out forwards",
       },
     },
   },
   plugins: [],
-}
+};

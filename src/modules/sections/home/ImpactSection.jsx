@@ -26,6 +26,8 @@ function useCountUp(target, duration = 2000, started = false) {
   return count;
 }
 
+const COL_OFFSET_PX = 48; // vertical offset for column animation (above/below)
+
 function StatCard({ label, value, suffix, prefix, started, index }) {
   const count = useCountUp(value, 1800 + index * 200, started);
 
@@ -36,12 +38,12 @@ function StatCard({ label, value, suffix, prefix, started, index }) {
 
   return (
     <div
-      className="relative rounded-2xl p-6 flex flex-col justify-between overflow-hidden group transition-all duration-300"
+      className="relative rounded-2xl p-8 flex flex-col justify-between overflow-hidden group transition-all duration-300"
       style={{
         background: "linear-gradient(145deg, #2a2a2a 0%, #1c1c1c 60%, #111111 100%)",
         border: "1px solid rgba(184,131,44,0.25)",
         boxShadow: "0 4px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(184,131,44,0.1)",
-        minHeight: "160px",
+        minHeight: "200px",
         animationDelay: `${index * 0.1}s`,
       }}
     >
@@ -65,7 +67,7 @@ function StatCard({ label, value, suffix, prefix, started, index }) {
 
       {/* Label */}
       <p
-        className="text-sm font-semibold tracking-widest uppercase"
+        className="text-base font-semibold tracking-widest uppercase"
         style={{
           color: "#b8832c",
           fontFamily: "'Rajdhani', sans-serif",
@@ -81,7 +83,7 @@ function StatCard({ label, value, suffix, prefix, started, index }) {
           className="font-black leading-none transition-all duration-300"
           style={{
             fontFamily: "'Rajdhani', sans-serif",
-            fontSize: "clamp(2.5rem, 5vw, 3.5rem)",
+            fontSize: "clamp(2.75rem, 5.5vw, 4rem)",
             color: "#ffffff",
             textShadow: "0 0 30px rgba(184,131,44,0.3)",
           }}
@@ -105,6 +107,7 @@ export default function ImpactNumbers() {
   const sectionRef = useRef(null);
   const [started, setStarted] = useState(false);
   const [visible, setVisible] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -120,6 +123,24 @@ export default function ImpactNumbers() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      const winH = window.innerHeight;
+      const sectionH = sectionRef.current.offsetHeight;
+      const progress = (winH - rect.top) / (winH + sectionH);
+      setScrollProgress(Math.max(0, Math.min(1, progress)));
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Cards 0,2 start above; 1,3 start below. From progress 0→0.5 they align to center; 0.5→1 stay centered.
+  const offsetAmount = scrollProgress <= 0.5 ? (1 - 2 * scrollProgress) * COL_OFFSET_PX : 0;
+  const getTranslateY = (i) => (i % 2 === 0 ? -offsetAmount : offsetAmount);
 
   return (
     <section
@@ -223,11 +244,19 @@ export default function ImpactNumbers() {
         </h2>
       </div>
 
-      {/* Stats Grid */}
-      <div className="relative z-10 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* Stats Grid - full width, column scroll animation */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-2">
         {stats.map((stat, i) => (
-          <div key={i} className={`stat-anim ${visible ? "visible" : ""}`} style={{ animationDelay: `${0.1 + i * 0.1}s` }}>
-            <StatCard {...stat} index={i} started={started} />
+          <div
+            key={i}
+            style={{
+              transform: `translateY(${getTranslateY(i)}px)`,
+              transition: "transform 0.35s ease-out",
+            }}
+          >
+            <div className={`stat-anim ${visible ? "visible" : ""}`} style={{ animationDelay: `${0.1 + i * 0.1}s` }}>
+              <StatCard {...stat} index={i} started={started} />
+            </div>
           </div>
         ))}
       </div>
