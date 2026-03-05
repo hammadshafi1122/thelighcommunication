@@ -1,53 +1,63 @@
-import React from 'react'
-import { FaLinkedinIn, FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { FaLinkedinIn, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import Logo from "../../assets/images/Logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#2b2624] text-white px-6 py-10 relative">
-      
-      <div className="max-w-7xl mx-auto border-t border-gray-600 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-        
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center font-bold">
-            L
-          </div>
-          <div>
-            <h1 className="text-sm font-bold">LIGHT</h1>
-            <p className="text-xs tracking-widest">COMMUNICATIONS</p>
-          </div>
-        </div>
+    <footer className="w-full bg-[#111111]">
 
-        {/* Footer Links */}
-        <div className="flex gap-6 text-gray-300">
-          <a href="/home" className="hover:text-yellow-400">Home</a>
-          <a href="/outbound" className="hover:text-yellow-400">Outbound</a>
-          <a href="/about" className="hover:text-yellow-400">About Us</a>
-          <a href="/contact" className="hover:text-yellow-400">Contact Us</a>
-        </div>
+      {/* Top gold line */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-yellow-600/40 to-transparent" />
 
-        {/* Social Icons */}
-        <div className="flex gap-4 text-gray-300">
-          <div className="border p-3 rounded-full hover:bg-yellow-500 hover:text-black transition">
+      {/* Main footer row */}
+      <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-5 gap-4">
+
+        {/* Logo — left */}
+        <span className="font-bold text-white text-2xl">
+         CROWNIX 
+         <span className="text-gold-600"> BPO</span>
+        </span>
+
+        {/* Nav links — center */}
+        <nav className="flex items-center gap-6 md:gap-10 text-sm font-semibold tracking-wide flex-wrap justify-center">
+          <NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Home</NavLink>
+          <NavLink to="/outbound" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Outbound</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>About Us</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Contact Us</NavLink>
+        </nav>
+
+        {/* Social icons — right */}
+        <div className="flex items-center gap-3">
+          <a
+            href="#"
+            className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
+          >
             <FaLinkedinIn />
-          </div>
-          <div className="border p-3 rounded-full hover:bg-yellow-500 hover:text-black transition">
+          </a>
+          <a
+            href="#"
+            className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
+          >
             <FaFacebookF />
-          </div>
-          <div className="border p-3 rounded-full hover:bg-yellow-500 hover:text-black transition">
-            <FaInstagram />
-          </div>
+          </a>
+          <a
+            href="#"
+            className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
+          >
+            <FaWhatsapp />
+          </a>
         </div>
       </div>
 
-      {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full shadow-lg text-white text-xl hover:scale-110 transition">
-        <FaWhatsapp />
+      {/* Bottom gold line + copyright */}
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-yellow-600/40 to-transparent" />
+      <div className="text-center py-3 text-xs text-white/30 tracking-wide">
+        © {new Date().getFullYear()} Crownix BPO. All rights reserved.
       </div>
 
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

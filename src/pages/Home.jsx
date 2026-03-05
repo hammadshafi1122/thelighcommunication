@@ -17,7 +17,7 @@ const Home = () => {
       <AdvantageSection></AdvantageSection>
       <Services></Services>
       <ImpactSection/>
-      <StateSection></StateSection>
+      {/* <StateSection></StateSection> */}
       <CallSection></CallSection>
       <ContactInfoSection></ContactInfoSection>
     </Layout>
