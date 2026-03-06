@@ -157,7 +157,7 @@ export default function TailoredSolutions() {
           {/* Eyebrow */}
           <div className={`a-up ${visible ? "go" : ""} flex items-center gap-3 mb-4`} style={{ animationDelay: "0.1s" }}>
             <div className="h-px w-6" style={{ background: "#b8832c" }} />
-            <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: "#b8832c" }}>Light Communications</span>
+            <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: "#b8832c" }}>Crownix BPO</span>
           </div>
 
           {/* Headline */}
@@ -183,7 +183,7 @@ export default function TailoredSolutions() {
           >
             With a combined leadership experience of{" "}
             <strong style={{ color: "#d8d8d8", fontWeight: 600 }}>12 years</strong> within
-            the industry, our team excels in managing large-scale businesses. At Light Communications,
+            the industry, our team excels in managing large-scale businesses. At Crownix BPO,
             we have emerged as pioneers in the{" "}
             <strong style={{ color: "#e0a83c", fontWeight: 500 }}>Contact Center sector</strong>,
             specializing in supporting customer interactions across diverse channels.
@@ -232,7 +232,7 @@ export default function TailoredSolutions() {
           {/* Eyebrow */}
           <div className={`a-up ${visible ? "go" : ""} flex items-center gap-3 mb-5`} style={{ animationDelay: "0.05s" }}>
             <div className="h-px w-8" style={{ background: "#b8832c" }} />
-            <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: "#b8832c" }}>Light Communications</span>
+            <span className="text-xs font-bold uppercase tracking-[0.22em]" style={{ color: "#b8832c" }}>Crownix BPO</span>
           </div>
 
           {/* Headline */}

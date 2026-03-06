@@ -279,8 +279,8 @@ export default function CallCenterSection() {
               e.target.style.transform = "translateY(0)";
             }}
           >
-            Join Our Team Today
-          </button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform"></a>
+          Join Our Team Today</button>
         </div>
       </div>
 

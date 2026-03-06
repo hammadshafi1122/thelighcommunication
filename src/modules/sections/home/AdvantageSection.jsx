@@ -148,7 +148,7 @@ export default function AdvantageSection() {
             style={{ animationDelay: "0.15s", fontSize: "clamp(1.8rem, 7vw, 2.8rem)", letterSpacing: "-0.01em" }}
           >
             <span className="gold-shimmer">ADVANTAGES </span>
-            <span style={{ color: "#ffffff" }}>LIGHT COMMUNICATIONS OFFERS</span>
+            <span style={{ color: "#ffffff" }}>CROWNIX BOX OFFERS</span>
           </h2>
 
           {/* Gold rule */}
@@ -293,7 +293,7 @@ export default function AdvantageSection() {
             style={{ animationDelay: "0.12s", fontSize: "clamp(2.2rem, 4vw, 4rem)", letterSpacing: "-0.01em" }}
           >
             <span className="gold-shimmer">ADVANTAGES </span>
-            <span style={{ color: "#ffffff" }}>LIGHT COMMUNICATIONS OFFERS</span>
+            <span style={{ color: "#ffffff" }}>CROWNIX BOX OFFERS</span>
           </h2>
 
           {/* Gold rule */}

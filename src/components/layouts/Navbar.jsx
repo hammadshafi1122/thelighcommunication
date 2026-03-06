@@ -31,8 +31,9 @@ function Navbar() {
 
         {/* Right side: Join Us + Hamburger */}
         <div className="flex items-center gap-4">
-          <button className="bg-gold-700 px-4 py-2 text-gold-100 text-sm font-semibold rounded hidden sm:block lg:ml-64">
-            Join Us
+          <button className="bg-gold-700 px-4 py-2 text-gold-100 text-sm font-semibold rounded hidden sm:block lg:ml-64" href="https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform">
+          <a href='             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform"> Apply Now</a> 
+'> Join Us</a>
           </button>
           <div className="md:hidden text-2xl cursor-pointer text-white ml-44">
             <FaBars onClick={() => setIsOpen(true)} />

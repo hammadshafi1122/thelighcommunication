@@ -42,8 +42,11 @@ function Footer() {
             <FaFacebookF />
           </a>
           <a
-            href="#"
+            
             className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
+href="https://wa.me/923311234567"  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "inline-block", textDecoration: "none" }}
           >
             <FaWhatsapp />
           </a>
