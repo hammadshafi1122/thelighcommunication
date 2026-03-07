@@ -18,8 +18,7 @@
     "react-scripts": "^5.0.1",
     "swiper": "^12.1.2",
     "tailwindcss-animate": "^1.0.7",
-    "web-vitals": "^2.1.4",
-    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build"
+    "web-vitals": "^2.1.4"
     
   },
   "scripts": {
