@@ -10,7 +10,7 @@ function useInView(threshold = 0.1) {
     );
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
-  }, []);
+  }, [threshold]);
   return [ref, inView];
 }
 
@@ -33,9 +33,7 @@ const features = [
 export default function LeadGenSection() {
   const [sectionRef, inView] = useInView(0.05);
   const width = useWindowWidth();
-  const isMobile = width < 640;
-  const isTablet = width >= 640 && width < 1024;
-  const isDesktop = width >= 1024;
+  
 
   return (
     <>

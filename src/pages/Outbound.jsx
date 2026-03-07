@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layouts/Layout'
-import ComingSoon from '../modules/sections/about/ComingSoon'
 import Servicescontactcenter from '../modules/sections/services/Servicescontactcenter'
 import ITSection from '../modules/sections/services/ITSection'
 import LeadGeneration from '../modules/sections/services/LeadGeneration'
