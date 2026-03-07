@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaLinkedinIn, FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import Logo from "../../assets/images/Logo.png";
 
 function Footer() {
   return (
@@ -28,7 +27,7 @@ function Footer() {
         </nav>
 
         {/* Social icons — right */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 mr-14">
           <a
             href="#"
             className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
@@ -41,16 +40,9 @@ function Footer() {
           >
             <FaFacebookF />
           </a>
-          <a
-            
-            className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
-href="https://wa.me/923311234567"  target="_blank"
-  rel="noopener noreferrer"
-  style={{ display: "inline-block", textDecoration: "none" }}
-          >
-            <FaWhatsapp />
-          </a>
+          
         </div>
+        
       </div>
 
       {/* Bottom gold line + copyright */}

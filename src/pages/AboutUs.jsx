@@ -7,7 +7,6 @@ export const AboutUs = () => {
     <div>
       <Layout>
         <AboutHero></AboutHero>
-        <ComingSoon></ComingSoon>
       </Layout>
 
     </div>
