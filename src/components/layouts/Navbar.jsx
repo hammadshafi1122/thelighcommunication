@@ -31,10 +31,10 @@ function Navbar() {
 
         {/* Right side: Join Us + Hamburger */}
         <div className="flex items-center gap-4">
-          <button className="bg-gold-700 px-4 py-2 text-gold-100 text-sm font-semibold rounded hidden sm:block lg:ml-64" href="https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform">
-          <a href='            https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform?usp=sharing&ouid=106319349793908383392 
+          <a className="bg-gold-700 px-4 py-2 text-gold-100 text-sm font-semibold rounded hidden sm:block lg:ml-64" 
+           href='            https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform?usp=sharing&ouid=106319349793908383392 
 '> Join Us</a>
-          </button>
+        
           <div className="md:hidden text-2xl cursor-pointer text-white ml-44">
             <FaBars onClick={() => setIsOpen(true)} />
           </div>
@@ -65,9 +65,9 @@ function Navbar() {
 
           {/* Join Us */}
           <div className="px-10 mt-6">
-            <button className="bg-gold-700 px-6 py-3 text-gold-100 font-semibold rounded w-full sm:w-auto">
-              Join Us
-            </button>
+            <a className="bg-gold-700 px-6 py-3 text-gold-100 font-semibold rounded w-full sm:w-auto" 
+              href='            https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform?usp=sharing&ouid=106319349793908383392'
+            ></a>
           </div>
         </div>
       </div>

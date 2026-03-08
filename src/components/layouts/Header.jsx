@@ -120,9 +120,8 @@ function Header() {
 
           {/* Line 5 — Buttons (unchanged) */}
           <div style={lineStyle(5)} className="mt-8 flex flex-col sm:flex-row gap-4 md:ml-64">
-            <button className="bg-gold-500 hover:bg-gold-800 text-gold-100 font-semibold px-8 py-3 rounded-full transition duration-300" >
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform"> Apply Now</a> 
-            </button>
+             <a className="bg-gold-500 hover:bg-gold-800 text-gold-100 font-semibold px-8 py-3 rounded-full transition duration-300" 
+             href="https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform"> Apply Now</a> 
             <button className="border-2 border-gold-600 text-gold-100 hover:bg-yellow-400 hover:text-black font-semibold px-8 py-3 rounded-full transition duration-300">
               Services
             </button>
