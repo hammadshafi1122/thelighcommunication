@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
 const stats = [
-  { value: "3+", label: "Years of Excellence" },
+  { value: "6+", label: "Years of Excellence" },
   { value: "100+", label: "Global Clients" },
   { value: "99%", label: "Client Retention" },
-  { value: "300+", label: "Professionals" },
+  { value: "150+", label: "Professionals" },
 ];
 
 const values = [
@@ -299,14 +299,14 @@ export default function AboutHero() {
                 Every team member at Crownix is selected not just for skill, but for character. We invest deeply in training, culture, and leadership — because the quality of your partner's team directly reflects on your brand.
               </p>
 
-              <div style={{ marginTop: "2.5rem", display: "flex", gap: isMobile ? "1.75rem" : "3rem", flexWrap: "wrap" }}>
+              {/* <div style={{ marginTop: "2.5rem", display: "flex", gap: isMobile ? "1.75rem" : "3rem", flexWrap: "wrap" }}>
                 {[["2012", "Founded"], ["Manila", "Headquarters"], ["ISO", "Certified"]].map(([val, lbl]) => (
                   <div key={lbl}>
                     <div style={{ fontSize: "1.3rem", fontWeight: 300, color: "#c9a84c" }}>{val}</div>
                     <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.58rem", letterSpacing: "0.2em", color: "#5a5040", textTransform: "uppercase", marginTop: "0.25rem" }}>{lbl}</div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

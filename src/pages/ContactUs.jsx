@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from '../components/layouts/Layout'
-import ComingSoon from '../modules/sections/about/ComingSoon'
+import ContactHero from '../modules/sections/contact/ContactHero'
 
 export const ContactUs = () => {
   return (
     <div>
       <Layout>
-        <ComingSoon></ComingSoon>
+        <ContactHero></ContactHero>
       </Layout>
     </div>
   )

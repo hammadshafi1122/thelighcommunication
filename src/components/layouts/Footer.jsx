@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaLinkedinIn, FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaInstagram , FaTiktok } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -39,6 +39,18 @@ function Footer() {
             className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
           >
             <FaFacebookF />
+          </a>
+           <a
+            href="#"
+            className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
+          >
+            <FaInstagram />
+          </a>
+           <a
+            href="#"
+            className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white hover:border-yellow-500 hover:text-yellow-500 transition duration-200 text-sm"
+          >
+            <FaTiktok />
           </a>
           
         </div>

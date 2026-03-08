@@ -24,7 +24,7 @@ function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-4 lg:gap-12 text-white font-semibold text-sm lg:text-base">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-gold-500" : "text-white hover:text-gold-400 transition"}>Home</NavLink>
-          <NavLink to="/outbound" className={({ isActive }) => isActive ? "text-gold-500" : "text-white hover:text-gold-400 transition"}>Services</NavLink>
+          <NavLink to="/services" className={({ isActive }) => isActive ? "text-gold-500" : "text-white hover:text-gold-400 transition"}>Services</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "text-gold-500" : "text-white hover:text-gold-400 transition"}>About Us</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? "text-gold-500" : "text-white hover:text-gold-400 transition"}>Contact Us</NavLink>
         </nav>

@@ -257,7 +257,7 @@ export default function TailoredSolutions() {
             style={{ animationDelay: "0.22s", color: "#9a9a9a", fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: "0.975rem", maxWidth: "500px" }}
           >
             With a combined leadership experience of{" "}
-            <strong style={{ color: "#d8d8d8", fontWeight: 600 }}>12 years</strong> within
+            <strong style={{ color: "#d8d8d8", fontWeight: 600 }}>6 years</strong> within
             the industry, our team excels in managing large-scale businesses, cultivating
             extensive teams, and fostering valuable relationships. At Light Communications,
             we have emerged as pioneers in the{" "}

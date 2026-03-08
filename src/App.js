@@ -13,8 +13,8 @@ function App() {
   
       <Routes className="bg-green-900  flex justify-center items-start">
         <Route path="/" element={<Home />} />
-        <Route path="/inbound" element={<Inbound />} />
-        <Route path="/outbound" element={<Outbound />} />
+        {/* <Route path="/inbound" element={<Inbound />} /> */}
+        <Route path="/services" element={<Outbound />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>

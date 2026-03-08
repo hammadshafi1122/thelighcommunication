@@ -131,13 +131,13 @@ function Header() {
       </div>
 
       {/* WhatsApp Floating Button */}
-      <div className="fixed w-14 h-14 bottom-12 right-6 bg-green-500 p-4 rounded-full shadow-lg text-white text-2xl hover:scale-110 transition duration-300" >
+      {/* <div className="fixed w-14 h-14 bottom-12 right-6 bg-green-500 p-4 rounded-full shadow-lg text-white text-2xl hover:scale-110 transition duration-300" >
         <a 
 href="https://wa.me/923311234567"  target="_blank"
   rel="noopener noreferrer"
   style={{ display: "inline-block", textDecoration: "none" }}><FaWhatsapp/></a>
         
-      </div>
+      </div> */}
 
     </header>
   );
