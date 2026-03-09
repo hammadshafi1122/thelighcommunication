@@ -91,7 +91,7 @@ export default function ContactSection() {
             ].map(({ label, email, subject, desc }) => (
               <a  
                 key={email}
-                href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
+                href="mailto:owner@example.com"
                 className="email-card group relative block rounded-2xl p-6 transition-all duration-300 cursor-pointer no-underline"
                 style={{
                   background: "rgba(212,175,55,0.04)",
@@ -174,7 +174,7 @@ export default function ContactSection() {
                         </label>
                         <input
                           type="text" name="name" value={form.name} onChange={handleChange}
-                          placeholder="Jane Smith" required className={inputBase}
+                          placeholder="Noman Chaudhary" required className={inputBase}
                         />
                       </div>
                       <div>
@@ -183,7 +183,7 @@ export default function ContactSection() {
                         </label>
                         <input
                           type="email" name="email" value={form.email} onChange={handleChange}
-                          placeholder="jane@email.com" required className={inputBase}
+                          placeholder="nomanchaudhary902@email.com" required className={inputBase}
                         />
                       </div>
                     </div>

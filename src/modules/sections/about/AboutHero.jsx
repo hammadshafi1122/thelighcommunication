@@ -4,7 +4,7 @@ const stats = [
   { value: "6+", label: "Years of Excellence" },
   { value: "100+", label: "Global Clients" },
   { value: "99%", label: "Client Retention" },
-  { value: "150+", label: "Professionals" },
+  { value: "200+", label: "Professionals" },
 ];
 
 const values = [
