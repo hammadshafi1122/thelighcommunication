@@ -370,7 +370,7 @@ export default function TailoredSolutions() {
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.18em] mb-2" style={{ color: "#b8832c" }}>Operational Scale</p>
                 <p style={{ color: "#afafaf", fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: "0.875rem", lineHeight: 1.65 }}>
-                  There are over <strong style={{ color: "#fff", fontWeight: 700 }}>150+</strong> seats presently operational across multiple locations, generating over <strong style={{ color: "#fff", fontWeight: 700 }}>25,000+</strong> transfers per month.
+                  There are over <strong style={{ color: "#fff", fontWeight: 700 }}>200+</strong> seats presently operational across multiple locations, generating over <strong style={{ color: "#fff", fontWeight: 700 }}>25,000+</strong> transfers per month.
                 </p>
               </div>
             </div>

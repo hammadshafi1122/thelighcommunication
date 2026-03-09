@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Mail, Send, CheckCircle, ArrowRight, Sparkles } from "lucide-react";
 
-const OWNER_EMAIL_1 = "noumanchaudhary902@gmail.com";
-const OWNER_EMAIL_2 = "hammadshafi1122@gmail.com";
+const OWNER_EMAIL_1 = "hr@crownixbpo.com";
+const OWNER_EMAIL_2 = "Info@crownixbpo.com";
 
 const inputBase =
   "w-full bg-white/5 border border-[#D4AF37]/20 rounded-xl text-[#F5ECD7] placeholder-[#6B6B6B] px-4 py-3 text-sm font-light outline-none transition-all duration-300 focus:border-[#D4AF37]/60 resize-none";

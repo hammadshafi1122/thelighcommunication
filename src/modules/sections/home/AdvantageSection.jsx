@@ -272,7 +272,7 @@ export default function AdvantageSection() {
             <div className="pl-2">
               <p className="text-xs font-bold uppercase tracking-[0.18em] mb-1" style={{ color: "#b8832c" }}>Expert Talent</p>
               <p style={{ color: "#afafaf", fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: "0.82rem", lineHeight: 1.6 }}>
-                Access to a <strong style={{ color: "#fff" }}>3,00+</strong> strong team across <strong style={{ color: "#fff" }}>2+</strong> nationwide branches.
+                Access to a <strong style={{ color: "#fff" }}>2,00+</strong> strong team across <strong style={{ color: "#fff" }}>2+</strong> nationwide branches.
               </p>
             </div>
           </div>

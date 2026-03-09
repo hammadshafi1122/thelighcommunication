@@ -7,17 +7,17 @@ const slides = [
   {
     tag: "YOU SHOULD BE WITH",
     headingLine1: { white: "CROWNIX ", gold: "BPO" },
-    sub: "SCALING YOUR BUSINESS",
+    sub: "SCALING SUCCESS TOGETHER",
   },
   {
     tag: "YOU SHOULD BE WITH",
     headingLine1: { white: "CROWNIX ", gold: "BPO" },
-    sub: "SCALING YOUR BUSINESS",
+    sub: "SCALING SUCCESS TOGETHER",
   },
   {
     tag: "YOU SHOULD BE WITH",
     headingLine1: { white: "CROWNIX ", gold: "BPO" },
-    sub: "SCALING YOUR BUSINESS",
+    sub: "SCALING SUCCESS TOGETHER",
   },
 ];
 
