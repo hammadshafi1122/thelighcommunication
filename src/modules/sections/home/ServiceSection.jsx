@@ -127,7 +127,7 @@ export default function TailoredSolutions() {
                 backdropFilter: "blur(8px)",
               }}
             >
-              <span className="font-black leading-none" style={{ color: "#b8832c", fontSize: "1.15rem", fontFamily: "'Barlow Condensed', sans-serif" }}>12+</span>
+              <span className="font-black leading-none" style={{ color: "#b8832c", fontSize: "1.15rem", fontFamily: "'Barlow Condensed', sans-serif" }}>6+</span>
               <span className="uppercase text-center leading-tight" style={{ color: "#888", fontSize: "0.5rem", letterSpacing: "0.1em" }}>Years</span>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function TailoredSolutions() {
               Operational Scale
             </p>
             <p style={{ color: "#afafaf", fontFamily: "'Barlow', sans-serif", fontWeight: 300, fontSize: "0.8rem", lineHeight: 1.6 }}>
-              Over <strong style={{ color: "#fff" }}>150+</strong> seats across multiple locations,
+              Over <strong style={{ color: "#fff" }}>200+</strong> seats across multiple locations,
               generating <strong style={{ color: "#fff" }}>25,000+</strong> transfers/month.
             </p>
           </div>
@@ -338,7 +338,7 @@ export default function TailoredSolutions() {
               className="w-20 h-20 rounded-full flex flex-col items-center justify-center"
               style={{ background: "rgba(184,131,44,0.13)", border: "1px solid rgba(184,131,44,0.42)", backdropFilter: "blur(8px)" }}
             >
-              <span className="font-black leading-none" style={{ color: "#b8832c", fontSize: "1.5rem", fontFamily: "'Barlow Condensed', sans-serif" }}>12+</span>
+              <span className="font-black leading-none" style={{ color: "#b8832c", fontSize: "1.5rem", fontFamily: "'Barlow Condensed', sans-serif" }}>6+</span>
               <span className="text-xs font-semibold uppercase mt-0.5" style={{ color: "#888", letterSpacing: "0.1em" }}>Years</span>
             </div>
           </div>

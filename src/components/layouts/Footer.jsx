@@ -21,7 +21,7 @@ function Footer() {
         {/* Nav links — center */}
         <nav className="flex items-center gap-6 md:gap-10 text-sm font-semibold tracking-wide flex-wrap justify-center">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Home</NavLink>
-          <NavLink to="/outbound" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Outbound</NavLink>
+          <NavLink to="/services" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Services</NavLink>
           <NavLink to="/about" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>About Us</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? "text-yellow-500" : "text-white hover:text-yellow-400 transition duration-200"}>Contact Us</NavLink>
         </nav>
