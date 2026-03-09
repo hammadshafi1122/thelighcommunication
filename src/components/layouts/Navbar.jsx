@@ -67,7 +67,7 @@ function Navbar() {
           <div className="px-10 mt-6">
             <a className="bg-gold-700 px-6 py-3 text-gold-100 font-semibold rounded w-full sm:w-auto" 
               href='            https://docs.google.com/forms/d/e/1FAIpQLSeCEYhK7Dj3DZzDb3Qem7NqU31U91X7vAqPOJ5-bWS2VPNveg/viewform?usp=sharing&ouid=106319349793908383392'
-            ></a>
+            >Join us</a>
           </div>
         </div>
       </div>
